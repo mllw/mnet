@@ -15,13 +15,15 @@ FetchContent_MakeAvailable(llhttp)
 
 add_library(${PROJECT_NAME} 
     STATIC
-    m_string.c
+    mw_string.c
     m_ssl.c
+    mw_utils.c
 
     m_ssl_openssl.c
 
     m_conn.c
     m_http.c
+    mw_url.c
 )
 
 target_link_libraries(

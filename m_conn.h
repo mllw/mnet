@@ -3,9 +3,11 @@
 
 #include <uv.h>
 
-struct m_conn_s {
+struct mw_conn_s {
     uv_tcp_t tcp;
     
 };
+
+typedef struct mw_conn_s mw_conn_t;
 
 #endif //!__M_CONN_H__
